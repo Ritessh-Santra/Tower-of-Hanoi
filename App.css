@@ -1,0 +1,102 @@
+/* Main app styling */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Introduction box styling */
+.introduction {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Rod container styling */
+.rods {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Rod styling for tower-like appearance */
+.rod {
+  width: 20px;
+  height: 300px;
+  background: linear-gradient(45deg, #8B4513, #A0522D); /* Wooden gradient */
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse; /* Stack disks bottom-to-top */
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 30px;
+}
+
+/* Rod Base Styling */
+.rod-base {
+  width: 80px; /* Width for the base */
+  height: 20px; /* Height for the base */
+  background-color: #0f9db6; /* Base color matching the rod */
+  margin-top: -10px; /* Space between rod and base */
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(54, 156, 63, 0.4);
+}
+
+/* Label Styling */
+.rod-label {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Disk styling */
+.disk {
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: grab;
+  transition: transform 0.2s;
+  margin-top: 5px; /* Adds space between disks */
+}
+
+.disk:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for each specific disk size */
+.disk-1 {
+  background-color: #FF6347;
+  width: 60px;
+  height: 20px;
+}
+
+.disk-2 {
+  background-color: #4682B4;
+  width: 80px;
+  height: 20px;
+}
+
+.disk-3 {
+  background-color: #3CB371;
+  width: 100px;
+  height: 20px;
+}
+
+/* Styling for congratulations and error messages */
+.congratulations {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+  font-weight: bold;
+}
